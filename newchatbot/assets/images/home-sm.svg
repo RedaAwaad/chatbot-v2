@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414" height="896" viewBox="0 0 414 896">
+  <defs>
+    <clipPath id="clip-iPhone_XR_XS_Max_11_1">
+      <rect width="414" height="896"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_XR_XS_Max_11_1" data-name="iPhone XR/XS Max/11 – 1" clip-path="url(#clip-iPhone_XR_XS_Max_11_1)">
+    <rect width="414" height="896" fill="#fff"/>
+    <path id="Path_1568" data-name="Path 1568" d="M902.787,46.673,715.225,823.494,74.59,560.655V46.673Z" transform="translate(-731.59 -63.445)" fill="#23517a" stroke="#8fdeff" stroke-width="1" style="mix-blend-mode: multiply;isolation: isolate"/>
+    <path id="Path_1569" data-name="Path 1569" d="M66.818,271.123l462,200.272H69.411" transform="translate(-54.06 963.781) rotate(-89)" fill="#23517a" opacity="0.52" style="mix-blend-mode: multiply;isolation: isolate"/>
+  </g>
+</svg>

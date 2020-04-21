@@ -1,0 +1,17 @@
+body {direction: rtl;}
+
+.navbar .brand-name {
+  left: auto;
+  right: 10%;
+}
+
+@media (min-width: 768px) {
+  .robot-img.offset-md-1 {
+      margin-right: 8.333333%;
+  }
+}
+
+.header-content .hero-text h1 {letter-spacing: 0;}
+
+.header-content .hero-text {text-align: right;}
+

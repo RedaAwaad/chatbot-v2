@@ -1,0 +1,160 @@
+{
+  "counts": [
+    {
+    "emotion": "angry",
+    "value": 4
+    },
+    {
+      "emotion": "disgust",
+      "value": 3
+    },
+    {
+      "emotion": "happy",
+      "value": 1
+    },
+    {
+      "emotion": "neutral",
+      "value": 4
+    },
+    {
+      "emotion": "sad",
+      "value": 0
+    },
+    {
+      "emotion": "surprise",
+      "value": 0
+    },
+    {
+      "emotion": "fear",
+      "value": 0
+    },
+    {
+      "emotion": "people",
+      "value": 62
+    }],
+
+  "pres": [
+    {
+      "emotion": "angry",
+      "value": 4
+    },
+    {
+      "emotion": "disgust",
+      "value": 0
+    },
+    {
+      "emotion": "happy",
+      "value": 1
+    },
+    {
+      "emotion": "neutral",
+      "value": 2
+    },
+    {
+      "emotion": "sad",
+      "value": 0
+    },
+    {
+      "emotion": "surprise",
+      "value": 0
+    },
+    {
+      "emotion": "fear",
+      "value": 0
+    },
+    {
+      "emotion": "people",
+      "value": 62
+    }
+  ],
+
+  "emotions": [
+    {
+      "face": 1,
+      "emotion": "angry"
+    },
+    {
+      "face": 2,
+      "emotion": "neutral"
+    },
+    {
+      "face": 3,
+      "emotion": "angry"
+    },
+    {
+      "face": 4,
+      "emotion": "angry"
+    },
+    {
+      "face": 5,
+      "emotion": "neutral"
+    },
+    {
+      "face": 6,
+      "emotion": "angry"
+    },
+    {
+      "face": 7,
+      "emotion": "anhappygry"
+    }],
+
+  "faces": [
+    {
+      "face": 1,
+      "coordinates": [537, 455, 58, 47]
+    },
+    {
+      "face": 2,
+      "coordinates": [
+        165,
+        367,
+        58,
+        41
+      ]
+    },
+    {
+      "face": 3,
+      "coordinates": [
+        265,
+        463,
+        59,
+        47
+      ]
+    },
+    {
+      "face": 4,
+      "coordinates": [
+        144,
+        506,
+        65,
+        53
+      ]
+    },
+    {
+      "face": 5,
+      "coordinates": [
+        389,
+        397,
+        68,
+        49
+      ]
+    },
+    {
+      "face": 6,
+      "coordinates": [
+        35,
+        366,
+        67,
+        52
+      ]
+    },
+    {
+      "face": 7,
+      "coordinates": [
+        287,
+        335,
+        63,
+        42
+      ]
+    }] 
+}

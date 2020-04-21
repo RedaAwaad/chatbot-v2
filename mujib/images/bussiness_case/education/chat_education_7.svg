@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="412.9" height="54.063" viewBox="0 0 412.9 54.063">
+  <g id="chat_education_7" transform="translate(-1248.351 -877.772)">
+    <g id="Group_7313" data-name="Group 7313" transform="translate(1591.316 931.836) rotate(180)">
+      <rect id="Rectangle_3783" data-name="Rectangle 3783" width="342.964" height="53.709" rx="10" transform="translate(0 0)" fill="#23517a"/>
+    </g>
+    <text id="No_thanks." data-name="No thanks." transform="translate(1269.372 910.722)" fill="#fff" font-size="17" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">No thanks.</tspan></text>
+    <g id="Group_7314" data-name="Group 7314" transform="translate(1607.247 877.772)">
+      <path id="Path_31507" data-name="Path 31507" d="M611.087,401.841a27.032,27.032,0,1,1,27.054-26.673A26.936,26.936,0,0,1,611.087,401.841Zm.1-11.769c4.117,0,8.235.02,12.352-.008,2.414-.016,3.5-1.616,2.573-3.845a11.7,11.7,0,0,0-7.147-6.819,25,25,0,0,0-14.154-.494,11.7,11.7,0,0,0-8.55,6.993c-1.077,2.5-.01,4.16,2.718,4.172C603.046,390.088,607.116,390.075,611.185,390.073Zm-.052-13.826a9.2,9.2,0,1,0,.087-18.4,9.2,9.2,0,0,0-.087,18.4Z" transform="translate(-584.136 -347.778)" fill="#143559"/>
+      <path id="Path_31508" data-name="Path 31508" d="M627.484,432.316c-4.069,0-8.139.014-12.209,0-2.728-.012-3.795-1.668-2.718-4.171a11.7,11.7,0,0,1,8.55-6.993,25,25,0,0,1,14.154.495,11.7,11.7,0,0,1,7.147,6.819c.925,2.229-.159,3.829-2.573,3.845C635.719,432.335,631.6,432.315,627.484,432.316Z" transform="translate(-600.435 -390.02)" fill="#fff"/>
+      <path id="Path_31509" data-name="Path 31509" d="M635.974,390.263a9.2,9.2,0,1,1,9.266-9.14A9.174,9.174,0,0,1,635.974,390.263Z" transform="translate(-608.977 -361.795)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashoard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/circles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo&display=swap">
+    <!-- Map -->
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/sa/sa-all.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- header --> 
+        <header class="main">
+            <nav class="navbar">
+              <h5 class="my-3">Wakeb Business intelligence Dashboard</h5>
+            </nav>
+        </header>
+        <!--/. header --> 
+
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-2 ">
+                    <div class="sidebar " width="100%">
+                        <div class="saudia-logo pb-4" 
+                        style="background-color: #000; margin-left: -15px; padding: 15px;">
+                            <img src="assets/images/munawla-logo.png"  width="100%" alt="munawla">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 leftchatboot mt-4">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="card"  style="min-height:290px">
+                                <div class="card-header">
+                                    <h3 class="card-title">Conversations growth rate</h3>
+                                </div>
+                              <div class="card-body" >
+                                <br>
+                                <canvas id="chartline" style=" max-height:370px !important"></canvas>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6  mb-4">
+                            <div class="card" style="min-height:290px">
+                                <div class="card-header">
+                                    <h3 class="card-title">Most mentioned air flights:</h3>
+                                    <!-- <div class="dropdown">
+                                      <button class="btn  dropdown-toggle" type="button" >
+                                        Month
+                                      </button>
+                                      <div class="dropdown-menu">
+                                        <button class="dropdown-item" >Day</button>
+                                        <button class="dropdown-item" >Year</button>
+                                      </div>
+                                    </div> -->    
+                                </div>
+                              <div class="card-body">
+                                <div class="text-center">
+                                    <i class="circle  mr-1" style="background-color: #59c8d9;"></i>
+                                    <small class="mr-2" style="color: #4D4F5C;">UAE</small>
+                                    <i class="circle  mr-1" style="background-color: #1C439A;"></i>
+                                    <small class="mr-2" style="color: #4D4F5C">Kuwait</small>
+                                    <i class="circle  mr-1" style="background-color: #008C9D;"></i>
+                                    <small class="mr-2" style="color: #4D4F5C">Qatar</small>
+                                </div>
+                                <div class="chart">
+                                 <canvas id="barChart" style="width: 100% !important; max-height:300px !important; width: 20px !important"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4  mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title mb-0" >Customer Statue</h3>
+                                        <small class="blue">Last 6 Months</small>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="ml-2">
+                                        <i class="circle  mr-2" style="background-color: #1C439A;"></i>
+                                        <span style="color: #1C439A">Number current customers</span>
+                                    </div>
+                                    <div class="ml-2 mb-2">
+                                        <i class="circle mr-2" style="background: #59c8d9;"></i>
+                                        <span style="color: #1C439A">Number of target customers</span>
+                                    </div>
+                                    <canvas id="radar-chart" width="100%" ></canvas>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-4 mb-4 ">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title mb-0" >Conversations by Country</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="suadiaMap"></div>
+                                    <div class="card-header">
+                                        <h3 class="card-title">
+                                            View Full Report
+                                        </h3>
+                                    </div>
+                                    <div class="px-4">
+                                        <div class="mb-3">
+                                            <div class="progress-data">
+                                                <span>Makkah</span>
+                                                <span>29,910</span>
+                                            </div>
+                                            <div class="progress">
+                                              <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="progress-data">
+                                                <span>Asir</span>
+                                                <span>98,321</span>
+                                            </div>
+                                            <div class="progress">
+                                              <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="progress-data">
+                                                <span>Ash sharqiyah</span>
+                                                <span>23,792</span>
+                                            </div>
+                                            <div class="progress">
+                                              <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="progress-data">
+                                                <span>Al Hudad</span>
+                                                <span>12,602</span>
+                                            </div>
+                                            <div class="progress">
+                                              <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="progress-data">
+                                                <span>Ash shamal</span>
+                                                <span>190,500</span>
+                                            </div>
+                                            <div class="progress">
+                                              <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <!-- <div>
+                                        <h3 class="card-title mb-0" >Type of device</h3>
+                                    </div> -->
+                                </div>
+                                <div class="card-body">
+                                    <div id="chart1" style="min-height: 210px;"></div>
+                                </div>
+                            </div> 
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <div>
+                                        <h3 class="card-title mb-0" >Duration of the conversation</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <canvas id="gauge1" style="width: 100%; height: auto;"></canvas>
+                                      <div class="text-center">
+                                        <small class="gauge-value">18 min</small>
+                                      </div>
+                                </div>
+
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2  mb-4 mt-4 sidechatboot">
+                    <div class="card">
+                        <div class="card-body circleschart">
+                            <div class=" text-center">
+                                <div  id="circles-1"></div>
+                              <div class="circle-label">Reservation</div>
+                            </div>
+                            <div class="text-center mb-2">
+                                <div  id="circles-2"></div>
+                                <div class="circle-label">Closed Conversations</div>
+                            </div>
+                            <div class="text-center mb-2">
+                                <div  id="circles-3"></div>
+                                <div class="circle-label">Completed Conversations</div>
+                            </div>
+                            <div class="text-center mb-2">
+                                <div  id="circles-4"></div>
+                                <div class="circle-label">Transferred Conversations</div>
+                            </div>
+                            <div class="text-center mb-2">
+                               <div  id="circles-5"></div>
+                                <div class="circle-label">Average Respond Time</div>
+                            </div>
+                            <div class="text-center mb-2">
+                                <div  id="circles-6"></div>
+                                <div class="circle-label">Error rate</div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                   
+
+            </div>
+        </section>
+        <!-- Footer  --> 
+        <footer>
+            <div class="text-center">
+                Product powered by Wakeb, All copyrights reserved © 2019
+            </div>
+        </footer>
+        <!--/. Footer  --> 
+    </div>
+    
+    <!--jquery-->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- page script -->
+    
+    <script >
+        var data = [
+            ['sa-4293', 0],
+            ['sa-tb', 1],
+            ['sa-jz', 2],
+            ['sa-nj', 3],
+            ['sa-ri', 4],
+            ['sa-md', 5],
+            ['sa-ha', 6],
+            ['sa-qs', 7],
+            ['sa-hs', 8],
+            ['sa-jf', 9],
+            ['sa-sh', 10],
+            ['sa-ba', 11],
+            ['sa-as', 12],
+            ['sa-mk', 13]
+        ];
+
+        // Create the chart
+        Highcharts.mapChart('suadiaMap', {
+            chart: {
+                map: 'countries/sa/sa-all'
+            },
+
+            title: {
+                text: ''
+            },
+
+            mapNavigation: {
+                enabled: true,
+                buttonOptions: {
+                    verticalAlign: 'bottom'
+                }
+            },
+
+            colorAxis: {
+                min: 0
+            },
+
+            series: [{
+                data: data,
+                name: 'Random data',
+                states: {
+                    hover: {
+                        // color: '#BADA55'
+                        color :'#59c8d9'
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
+            }]
+        });
+    </script>
+
+    <!-- charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Circle chart -->
+    <script src="assets/js/circles.js"></script>  
+    <!--gauge.js-->
+    <script src="assets/js/gauge.min.js"></script>
+    <!-- Canvas chart -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- Echart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.7.2/echarts-en.min.js"></script>
+
+    <!-- functions JS -->
+    <script src="assets/js/functions.js"></script>
+
+    <script>
+
+        $(function () {
+                
+        
+       
+
+        /***************** bar-chart-grouped //charts.js**************/
+        new Chart(document.getElementById("barChart"), {
+            type: 'bar',
+            data: {
+              labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+              datasets: [
+                {
+                  backgroundColor: "#59c8d9",
+                  data: [30,20,25,15,40,30,20],
+                }, {
+
+                  backgroundColor: "#1C439A",
+                  data: [50,60,40,70,65,40,50]
+                }
+                , {
+
+                  backgroundColor: "#008C9D",
+                  data: [30,20,30,30,25,15,20]
+                }
+              ]
+            },
+            options: {
+               scales: {
+                    xAxes: [{
+                        display:true,
+                        barThickness: 6,  
+                        maxBarThickness: 10,
+                        categoryPercentage:0.6,
+                        stacked: false,
+                        ticks: {
+                            fontColor:'#43425D'
+                        }
+                    }
+                    
+                ],
+                yAxes:[{
+                    ticks: {
+                            fontColor:'#43425D'
+                        }
+
+                }]
+                },
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    callbacks: {
+                       label: function(tooltipItem) {
+                              return tooltipItem.yLabel;
+                       }
+                    }
+                }
+            }
+        });    
+
+        /************ radar-chart //charts.js*********/
+        new Chart(document.getElementById("radar-chart"), {
+            type: 'radar',
+            data: {
+              labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+
+              datasets: [
+                {
+                  label: "Customer Statue",
+                  fill: true,
+                  backgroundColor: "#1C439A",
+                  borderColor: "#1C439A",
+                  borderRaduis:"5",
+                  pointBorderColor: "#1C439A",
+                  pointBackgroundColor: "#1C439A",
+                  data: [80,80,80,80,40,80]
+                }, {
+                  label:"Target customers",
+                  fill: true,
+                  backgroundColor: "#59c8d9",
+                  borderColor: "#59c8d9",
+                  pointBorderColor: "#59c8d9",
+                  pointBackgroundColor: "#59c8d9",
+                  pointBorderColor: "#fff",
+                  data: [95,70,95,60,95,30]
+                }
+              ]
+            },
+            options: {
+               scale: {
+                    angleLines: {
+                        display: false
+                    },
+                    ticks: {
+                       display: false
+                    }
+                },
+
+                legend: {
+                    display: false
+                }
+            }
+        });
+
+        new Chart(document.getElementById("chartline"), {
+            type: 'line',
+            data: {
+              labels: ["01", "05", "09", "13", "17", "21","26","31"],
+
+              datasets: [
+                 {
+                  label:"Conversations Rate By Kbyte",
+                  fill: true,
+                  backgroundColor: "#59c8d9",
+                  borderColor: "#1C439A",
+                  pointBorderColor: "#1C439A",
+                  pointBackgroundColor: "#1C439A",
+                  pointBorderColor: "#1C439A",
+                  data: [30,50,62,52,83,54,60,81]
+                }
+              ]
+            },
+            options: {
+               scale: {
+                    angleLines: {
+                        display: false
+                    },
+                    ticks: {
+                       display: false
+                    }
+                },
+                
+                legend: {
+                    display: false
+                }
+            }
+        });
+
+        //******************* gauge js*****************//
+            /** gauge1 **/
+              var opts = {
+                angle: 0, // The span of the gauge arc
+                lineWidth: 0.2, // The line thickness
+                radiusScale: 1, // Relative radius
+                pointer: {
+                  length: 0.35, // //c Relative to gauge radius
+                  strokeWidth: 0.038, // The thickness
+                  color: '#59c8d9' // 
+                
+                },
+                
+                renderTicks: {
+                  divisions: 50,
+                  divWidth: 1.8,
+                  divLength: 1,
+                   divColor: '#FFFFFF',
+                },
+                staticZones: [
+                   {strokeStyle: "#56d9fe", min: 0, max: 20}, // Red from 100 to 130
+                   {strokeStyle: "#2051da", min: 20, max: 40}, // Yellow
+                   {strokeStyle: "#f85757", min: 40, max: 60}, // Greend
+                ],
+                staticLabels: {
+                font: "14px",  // Specifies font
+                labels: [0, 60],  // Print labels at these values
+                color: "#59c8d9",  // Optional: Label text color
+                fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+              },
+
+                
+              };
+              var target = document.getElementById('gauge1'); // your canvas element
+              var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+              gauge.maxValue = 60; // set max gauge value
+              gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+              gauge.animationSpeed = 10; // set animation speed (32 is default value)
+              gauge.set(18); // set actual value
+
+            /* */        
+
+
+        /****************** circles //circle.js*******************/
+          var colors = [
+              ['#59c8d9', '#1C439A'], ['#59c8d9', '#1C439A'], ['#59c8d9', '#1C439A'], ['#59c8d9', '#1C439A'], ['#59c8d9', '#1C439A'], ['#59c8d9', '#1C439A'],
+            ],
+            percentages = [87,21,61,75,75,20];
+
+          for (var i = 1; i <= 7 ; i++) {
+            var child = document.getElementById('circles-' + i),
+              percentage = 30 + (i * 10);
+              
+            Circles.create({
+              id:         child.id,
+              percentage: percentages[i - 1],
+              radius:     45,
+              width:      5,
+              number:     percentages[i - 1],
+              text:       '%',
+              colors:     colors[i - 1]
+            });
+          }
+          
+
+             
+        })//function end 
+        
+
+        /********************* Echart *********************/
+        /*chart1*/  
+        var dom = document.getElementById("chart1");
+          var myChart = echarts.init(dom);
+          var app = {};
+          option = null;
+          option = {
+              color: ['#0683a5','#1c439a','#59c8d9','#03566b'],
+              tooltip : {
+                  trigger: 'item',
+                  //formatter: "{a} <br/>{b} : {c}%"
+                  formatter: "{a} <br/>{b} : {c} ({d}%)"
+              },
+             
+              calculable : true,
+              series : [
+                  
+                  {
+                      name:'Device type',
+                      type:'pie',
+                      radius : [35, 60],
+                      center : ['50%', '50%'],
+                      
+                      label: {
+                        normal: {
+                            show: true,
+                            position: 'outside'//remove it to change label to outside
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '12',
+                               
+                            }
+                        }
+                    },
+                      data:[
+                          {value:1000, name:"Android"},
+                          {value:500, name:'Others'},
+                          {value:803, name:"IOS"},
+                          {value:600, name:'Laptop'},
+                      ]
+                  }
+              ]
+          };
+          ;
+          if (option && typeof option === "object") {
+              myChart.setOption(option, true);
+          }
+         //gChart.setOption(option, true);
+
+         
+        
+    </script>
+
+</body>
+</html>

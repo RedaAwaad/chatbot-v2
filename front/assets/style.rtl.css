@@ -1,0 +1,148 @@
+/*@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
+html, body{
+  font-family:  "Droid Arabic Kufi" !important;
+
+}
+
+*{
+  font-family: "Droid Arabic Kufi",'Droid Arabic Naskh',"tahoma" !im ;
+  letter-spacing: normal !important;
+}*/
+body{
+  direction: rtl;
+}
+.tb-hreo-imgg{
+  right: auto;
+  left: 20px;
+}
+.chat {    text-align: right;}
+.start-chat .button-text{
+  margin: 0 1.85rem 0 0 
+}
+.start-chat .circle img{
+  left: auto;
+  right: 12px;
+}
+.chat{
+    text-align: right;
+}
+.tb-hero-large-circle{
+  left: -19%;
+  right: auto;
+}
+.tb-hero-small-circle {
+  right: 145px;
+  left: auto;
+}
+.page .title h1{
+  font-family: inherit;
+  letter-spacing: normal !important;
+}
+.page .title p{
+  font-family: inherit;
+}
+.profile-icon{
+  right: -3px;
+  left: auto;
+}
+.header h3{
+  padding-right: 28px;
+  padding-left: 0;
+  font-size: 16px;
+
+}
+/**/
+.header .status{
+  padding-left: 0;
+  padding-right: 36px;
+}
+.header .status i{
+  margin-left: 3px;
+  margin-right: 0;
+}
+
+.typing-text{
+  bottom: -2px;
+}
+.chatWrap .cont .chat, .typing-text{
+  direction: ltr;
+}
+.questions span{
+  padding: 0.5rem
+}
+
+@media screen and (max-width: 1840px) {
+  .tb-hero-large-circle {
+    left: -25%;
+    right: auto;
+  }
+  .tb-hreo-img {
+    left: -150px;
+    right: auto;
+  }
+}  
+
+@media screen and (max-width: 1750px) {
+  .tb-hero-large-circle {
+    left: -25%;
+    right: auto;
+  }
+  .tb-hreo-img {
+    left: -10%;
+  }
+}
+@media screen and (max-width: 1600px) {
+   .tb-hero-large-circle {
+    left: -24%;
+    right: auto;
+   }
+   .tb-hreo-img {
+    left: -12%;
+    right: auto;
+  }
+}   
+
+@media screen and (max-width: 1500px) {
+    .tb-hero-large-circle {
+      left: -18%;
+      right: auto;
+    }
+    .tb-hreo-img {
+    left: -8%;
+    right: auto;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .tb-hero-large-circle {
+    left: -24%;
+    right: auto;
+  }
+    .tb-hreo-img {
+    left: -18%;
+    right: auto;
+  }
+ }   
+ @media screen and (max-width: 1280px) {
+  .tb-hreo-img {
+    left: -34%;
+    right: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+
+  .tb-hero-large-circle {
+     left: -15%;
+     right: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+
+  .tb-hero-large-circle {  
+    left: -18%;
+    right: auto;
+  }
+  .chat-icon{
+    left: 10px;
+    right: auto;
+  }
+}

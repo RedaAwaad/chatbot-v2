@@ -1,0 +1,27 @@
+@mixin Trans {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*========== Animation Classes ========================*/
+
+/**/
+@mixin Up-down{
+    -webkit-animation: up-down 1s infinite  alternate !important;
+    animation: up-down 1s infinite  alternate !important;
+}
+
+@-webkit-keyframes up-down {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+ @keyframes up-down {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+/**/
+@mixin scale($s){
+    transform:scale($s) !important;
+    -webkit-transform:scale($s) !important;
+    -moz-transform:scale($s) !important;
+}

@@ -1,0 +1,135 @@
+body {direction: rtl;}
+
+/*  */
+.navbar-collapse {right: auto;left: -100%;}
+
+.navbar-collapse.show-navbar {right: auto;left: 0;}
+
+.navbar-toggler .menu-title {left: auto;right: -33px;}
+
+.navbar-nav {text-align: right;}
+
+.header .content {
+  position: absolute;
+  width: auto;
+  top: auto;
+  bottom: 40%;
+  left: 11%;
+  text-align: right;
+}
+/* 
+@media screen and (min-width: 1100px) {
+  .header .content {
+    width: 80%;
+    top: 40%;
+    bottom: auto;
+    left: auto;
+    right: 1%;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  .header .content {
+    width: 61%;
+    top: auto;
+    bottom: 2%;
+    left: 11%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .content {
+    width: 90%;
+    top: auto;
+    bottom: 2%;
+    left: auto;
+    right: 10%;
+    text-align: center;
+  }
+}
+
+.integration .integration__text {
+  padding-left: auto;
+  padding-right: 2.5rem;
+  text-align: right;
+}
+
+.integration .btn-check-more span.img,
+.integration .btn-check-more img {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.integration .btn-check-more img {right: auto;left: -32px;}
+
+/* Bussiness case */
+
+.business-content .categories {
+  text-align: right;
+  padding-right: 0;
+}
+
+.business-content .heading .heading__text {left: auto;right: -45px;}
+
+.business-case .business-content .heading {
+  border-right: 0;
+  border-left: 2px solid #143559;
+}
+
+.business-case .demo-display {text-align: right;}
+
+.business-case .phone-part .img-overlay {left: -60%;right: auto;}
+
+@media (min-width: 992px) {
+  .offset-lg-2 {
+      margin-left: auto;
+      margin-right: 16.666667%;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 760px) {
+  .business-case .chat__screen {margin-right: -40px;}
+}
+
+/* FAQ */
+@media (min-width: 768px) {
+  .offset-md-1 {margin-left: auto;margin-right: 8.333333%;}
+}
+
+.questions li.card {position: relative;right: -4%;}
+
+.questions .question-btn {padding-right: 40px;}
+
+@media (max-width: 500px) {
+  .questions .card-header {
+      padding-left: 5px;
+      padding-right: 38px;
+      text-align: right;
+  }
+}
+
+.questions .accordion {text-align: right;}
+
+.card-header span {left: auto;right: 5px;}
+
+.card-header span i {margin-right: 5px;}
+
+.demo .demo-form label {left: auto;right: 25px;}
+
+.demo .demo-form textarea {padding-right: 27px;}
+
+.demo .demo-form textarea + .form-bg + label {left: auto;right: 15px;}
+
+.demo-form .form-bg.fullHeightBg + label, 
+.demo .demo-form textarea + .form-bg.fullHeightBg + label {
+  left: auto;
+  right: 15px;
+}
+
+.partners__slider, .clients__slider {direction: ltr !important;}
+
+.footer {text-align: right;}
+
+.footer-logo .background {left: auto;right: 0;}
+
+.footer .footer-content ul {padding-left: auto;padding-right: 0;}

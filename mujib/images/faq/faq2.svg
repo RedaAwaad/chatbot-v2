@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.057" height="428.948" viewBox="0 0 472.057 428.948">
+  <defs>
+    <filter id="Path_30814" x="126.611" y="6.593" width="209.16" height="419.218" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30932" x="96.42" y="98.457" width="93.867" height="80.015" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30935" x="96.576" y="189.153" width="88.156" height="57.315" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30933" x="305.955" y="98.999" width="106.125" height="77.657" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30934" x="133.947" y="147.753" width="193.885" height="138.415" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_31633" x="259.395" y="219.316" width="106.878" height="40.248" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="show2" transform="translate(-19.054 -86)">
+    <path id="Path_30813" data-name="Path 30813" d="M333.3,522.268l-145.538-.673A31.7,31.7,0,0,1,156.2,489.758l1.542-364.869a31.7,31.7,0,0,1,31.85-31.569l145.54.672a31.7,31.7,0,0,1,31.556,31.837L365.145,490.7A31.7,31.7,0,0,1,333.3,522.268Z" transform="translate(-11.2 -7.32)" fill="#143559"/>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_30814)">
+      <path id="Path_30814-2" data-name="Path 30814" d="M332.929,103.986l-28.218-.131a7.011,7.011,0,0,0-6.881,7.132l-.023,5.118a7.008,7.008,0,0,1-6.881,7.131l-55-.253a7.018,7.018,0,0,1-6.822-7.2l.023-5.118a7.018,7.018,0,0,0-6.823-7.2l-9.923-.045-24.7-.115a22.205,22.205,0,0,0-22.306,22.109l-1.5,356.139a22.2,22.2,0,0,0,22.1,22.3l145.249.67a22.2,22.2,0,0,0,22.3-22.109l1.506-356.141A22.2,22.2,0,0,0,332.929,103.986Z" transform="translate(-28.26 -90.72)" fill="#fff"/>
+    </g>
+    <g id="Group_3193" data-name="Group 3193" transform="translate(-8 -22.382)">
+      <rect id="Rectangle_109" data-name="Rectangle 109" width="23.068" height="5.075" transform="translate(311.328 225.333)" fill="#143559"/>
+      <rect id="Rectangle_110" data-name="Rectangle 110" width="23.068" height="5.075" transform="translate(329.551 248.631) rotate(-90)" fill="#143559"/>
+      <rect id="Rectangle_113" data-name="Rectangle 113" width="23.068" height="5.075" transform="translate(311.328 397.247)" fill="#143559"/>
+      <rect id="Rectangle_114" data-name="Rectangle 114" width="23.068" height="5.075" transform="translate(334.626 379.023) rotate(90)" fill="#143559"/>
+      <rect id="Rectangle_111" data-name="Rectangle 111" width="23.068" height="5.075" transform="translate(204.298 230.408) rotate(180)" fill="#143559"/>
+      <rect id="Rectangle_112" data-name="Rectangle 112" width="23.068" height="5.075" transform="translate(180.999 248.631) rotate(-90)" fill="#143559"/>
+      <rect id="Rectangle_115" data-name="Rectangle 115" width="23.068" height="5.075" transform="translate(204.298 402.322) rotate(180)" fill="#143559"/>
+      <rect id="Rectangle_116" data-name="Rectangle 116" width="23.068" height="5.075" transform="translate(186.074 379.023) rotate(90)" fill="#143559"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_30932)">
+      <path id="Path_30932-2" data-name="Path 30932" d="M74.608,60.461,0,0" transform="translate(106.05 105.23)" fill="#d6eaff" stroke="#143559" stroke-width="2"/>
+    </g>
+    <g id="Group_3196" data-name="Group 3196" transform="translate(332 -39)">
+      <rect id="Rectangle_203" data-name="Rectangle 203" width="37.007" height="22.469" transform="translate(89.103 208.589)" fill="#d6eaff"/>
+      <text id="City" transform="translate(95.053 224.333)" fill="#143559" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">City</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_30935)">
+      <path id="Path_30935-2" data-name="Path 30935" d="M0,38.071,69.2.514" transform="translate(106.05 195.52)" fill="none" stroke="#143559" stroke-width="2"/>
+    </g>
+    <g id="Group_3195" data-name="Group 3195" transform="translate(364 -9)">
+      <rect id="Rectangle_202" data-name="Rectangle 202" width="115.007" height="27.469" transform="translate(12.103 341.589)" fill="#e5d6ff"/>
+      <text id="Price_list_request" data-name="Price list request" transform="translate(13.053 360.333)" fill="#143559" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Price list request</tspan></text>
+    </g>
+    <g id="Group_3198" data-name="Group 3198" transform="translate(-361 -7)">
+      <path id="Path_31006" data-name="Path 31006" d="M0,0H101V22.469H0Z" transform="translate(385.103 326.589)" fill="#d6eaff"/>
+      <text id="Street_address" data-name="Street address" transform="translate(387 343)" fill="#143559" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Street address</tspan></text>
+    </g>
+    <g id="Group_3197" data-name="Group 3197" transform="translate(-361 -38)">
+      <rect id="Rectangle_204" data-name="Rectangle 204" width="106.007" height="22.469" transform="translate(380.1 207.223)" fill="#e1f4d6"/>
+      <text id="Name_of_Person" data-name="Name of Person" transform="translate(380.054 223.333)" fill="#143559" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Name of Person</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_30933)">
+      <path id="Path_30933-2" data-name="Path 30933" d="M-2.768,53.7,84.248-4.3" transform="translate(318.28 110.13)" fill="none" stroke="#143559" stroke-width="2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_30934)">
+      <path id="Path_30934-2" data-name="Path 30934" d="M331.673,336.883v96.78H494.891l11.667,22.908V336.883Z" transform="translate(-188.23 -182.63)" fill="none" stroke="#143559" stroke-width="1"/>
+    </g>
+    <g id="Group_3194" data-name="Group 3194" transform="translate(-5528 -101)">
+      <rect id="Rectangle_3639" data-name="Rectangle 3639" width="46.007" height="15.469" transform="translate(5714.103 415.589)" fill="#e5d6ff"/>
+      <rect id="Rectangle_3638" data-name="Rectangle 3638" width="31.007" height="15.469" transform="translate(5785.103 398.589)" fill="#e5d6ff"/>
+      <rect id="Rectangle_3636" data-name="Rectangle 3636" width="39.007" height="15.469" transform="translate(5823.103 350.589)" fill="#d6eaff"/>
+      <path id="Path_31632" data-name="Path 31632" d="M0,0H70.583V16H0Z" transform="translate(5722.502 366.81)" fill="#d6eaff"/>
+      <text id="hi_I_m_Muhammad_from_Riyadh_From_Olaya_Street_how_much_is_this_price_for_shipping_" data-name="hi, I&apos;m Muhammad from Riyadh
+From Olaya Street,
+
+ how much is this price
+ for shipping?
+
+" transform="translate(5693 349)" fill="#143559" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="13">hi, I&apos;m Muhammad from Riyadh</tspan><tspan x="0" y="29">From Olaya Street,</tspan><tspan x="0" y="45"></tspan><tspan x="0" y="61" xml:space="preserve"> how much is this price</tspan><tspan x="0" y="77" xml:space="preserve"> for shipping?</tspan></text>
+      <rect id="Rectangle_3637" data-name="Rectangle 3637" width="65.822" height="12.569" transform="translate(5727.039 352.176)" fill="#44b800" opacity="0.16"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 19.05, 86)" filter="url(#Path_31633)">
+      <path id="Path_31633-2" data-name="Path 31633" d="M85.663,16-2.768-4.3" transform="translate(271.39 230.59)" fill="none" stroke="#143559" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

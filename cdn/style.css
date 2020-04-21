@@ -1,0 +1,108 @@
+.chat_bot{
+    position: fixed;
+    right: 36px;
+    bottom: 10%;
+    z-index: 99999;
+}
+.get-start{
+    position: fixed;
+    right: -50px;
+    bottom: 5%;
+    z-index: 99999;
+}
+
+iframe {
+    width: 400px;
+    height: 600px;
+}
+
+@media (max-width: 767px)  {
+.chat_bot {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+iframe{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+}
+
+}
+
+        /* start chat*/
+        .get-start{
+            margin-top:2rem;
+        }
+        .start-chat {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }
+        .start-chat {
+            width: 12rem;
+            height: auto;
+        }
+        .start-chat .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background:#29abe2;
+            border-radius: 1.625rem;
+        }
+        .start-chat .circle img{
+            position: absolute;
+            left:12px;
+            top: 12px
+        }
+        .start-chat .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 0.75rem 0;
+            margin: 0 0 0 1.85rem;
+            color: #29abe2;
+            font-weight: 700;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .start-chat:hover .circle .icon.arrow {
+            background: #fff;
+            transform: translate(1rem, 0);
+        }
+        .start-chat:hover .button-text {
+            color: #fff;
+        }
+        .start-chat:hover .circle img{
+            position: absolute;
+            left:12px;
+            top: 12px
+        }
+
+        /**/
+        .start-chat:focus{
+            outline: none;
+        }
+        .start-chat:hover{
+
+        }
+        
+        .header{
+            background: #000;
+        }

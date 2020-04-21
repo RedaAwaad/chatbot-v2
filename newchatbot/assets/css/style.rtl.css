@@ -1,0 +1,85 @@
+body{
+  direction: rtl;
+}
+.loader-effect{
+	right:50%;
+	left:auto;
+	-webkit-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+#home, #home .social-icon, #home .intro, #home .footer{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#home .intro{
+	text-align: right;
+}
+
+.home-cont{
+	display: flex;
+	flex-direction: row-reverse;
+}
+.button.login{
+	right: auto;
+	left:10px ;
+}
+.top-nav ul{
+	text-align: right;
+}
+.robot{
+	text-align: left;
+}
+.float-lg-right{
+	float: left !important;
+}
+
+#home .right-ani{
+	right: 0;
+}
+/************** media **************/
+
+@media (max-width: 991px){
+	.login.button{
+        top:0;
+	}
+	#home .social-icon {
+		right: 32px;
+	}
+	#home .right-ani{
+		right: 2px;
+	}
+}
+
+@media (max-width: 767px){
+	
+}
+
+@media (max-width: 580px) {
+    
+	.custom-button{
+		float: right !important;
+	}
+	
+}
+@media (max-width: 480px) {
+    
+	.home-cont{
+		display: block;
+	}
+	#home .robot{
+		width: 66vw;
+	}
+	
+}
+@media (max-width: 460px) {
+
+	#home .robot{
+		margin-top: 40px;
+	}
+}
+
+

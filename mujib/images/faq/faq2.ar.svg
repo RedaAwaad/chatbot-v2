@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="442.007" height="428.948" viewBox="0 0 442.007 428.948">
+  <defs>
+    <filter id="Path_30814" x="133.562" y="6.593" width="209.16" height="419.218" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30932" x="103.747" y="137.74" width="65.069" height="58.666" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30935" x="104.044" y="214.078" width="110.243" height="54.358" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30464" x="288.731" y="216.388" width="93.748" height="37.18" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30933" x="235.307" y="137.336" width="141.857" height="61.822" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_30934" x="140.897" y="167.753" width="193.885" height="110.43" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2846" data-name="Group 2846" transform="translate(-12.103 -86)">
+    <g id="Group_2845" data-name="Group 2845">
+      <path id="Path_30813" data-name="Path 30813" d="M333.3,522.268l-145.538-.673A31.7,31.7,0,0,1,156.2,489.758l1.542-364.869a31.7,31.7,0,0,1,31.85-31.569l145.54.672a31.7,31.7,0,0,1,31.556,31.837L365.145,490.7A31.7,31.7,0,0,1,333.3,522.268Z" transform="translate(-11.2 -7.32)" fill="#143559"/>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30814)">
+        <path id="Path_30814-2" data-name="Path 30814" d="M332.929,103.986l-28.218-.131a7.011,7.011,0,0,0-6.881,7.132l-.023,5.118a7.008,7.008,0,0,1-6.881,7.131l-55-.253a7.018,7.018,0,0,1-6.822-7.2l.023-5.118a7.018,7.018,0,0,0-6.823-7.2l-9.923-.045-24.7-.115a22.205,22.205,0,0,0-22.306,22.109l-1.5,356.139a22.2,22.2,0,0,0,22.1,22.3l145.249.67a22.2,22.2,0,0,0,22.3-22.109l1.506-356.141A22.2,22.2,0,0,0,332.929,103.986Z" transform="translate(-21.31 -90.72)" fill="#fff"/>
+      </g>
+      <path id="Path_31006" data-name="Path 31006" d="M0,0H69.007V22.469H0Z" transform="translate(385.103 326.589)" fill="#d6eaff"/>
+      <rect id="Rectangle_204" data-name="Rectangle 204" width="64.007" height="22.469" transform="translate(380.103 207.589)" fill="#e1f4d6"/>
+      <rect id="Rectangle_203" data-name="Rectangle 203" width="37.007" height="22.469" transform="translate(89.103 208.589)" fill="#d6eaff"/>
+      <rect id="Rectangle_202" data-name="Rectangle 202" width="113.007" height="27.469" transform="translate(12.103 341.589)" fill="#e5d6ff"/>
+      <rect id="Rectangle_109" data-name="Rectangle 109" width="20.848" height="4.587" transform="translate(298.784 225.333)" fill="#143559"/>
+      <rect id="Rectangle_110" data-name="Rectangle 110" width="20.848" height="4.587" transform="translate(315.254 246.389) rotate(-90)" fill="#143559"/>
+      <rect id="Rectangle_113" data-name="Rectangle 113" width="20.848" height="4.587" transform="translate(298.784 357.364)" fill="#143559"/>
+      <rect id="Rectangle_114" data-name="Rectangle 114" width="20.848" height="4.587" transform="translate(319.841 340.895) rotate(90)" fill="#143559"/>
+      <rect id="Rectangle_111" data-name="Rectangle 111" width="20.848" height="4.587" transform="translate(202.055 229.919) rotate(180)" fill="#143559"/>
+      <rect id="Rectangle_112" data-name="Rectangle 112" width="20.848" height="4.587" transform="translate(180.999 246.389) rotate(-90)" fill="#143559"/>
+      <rect id="Rectangle_115" data-name="Rectangle 115" width="20.848" height="4.587" transform="translate(202.055 361.951) rotate(180)" fill="#143559"/>
+      <rect id="Rectangle_116" data-name="Rectangle 116" width="20.848" height="4.587" transform="translate(185.585 340.895) rotate(90)" fill="#143559"/>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30932)">
+        <path id="Path_30932-2" data-name="Path 30932" d="M45.769,39.146,0,0" transform="translate(113.4 144.5)" fill="#d6eaff" stroke="#143559" stroke-width="2"/>
+      </g>
+      <text id="مدينة" transform="translate(92.053 227.333)" fill="#143559" font-size="18" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">مدينة</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30935)">
+        <path id="Path_30935-2" data-name="Path 30935" d="M91.538.514,0,35" transform="translate(113.4 220.5)" fill="none" stroke="#143559" stroke-width="2"/>
+      </g>
+      <text id="طلب_قائمة_الاسعار" data-name="طلب قائمة الاسعار" transform="translate(15.053 362.333)" fill="#143559" font-size="18" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">طلب قائمة الاسعار</tspan></text>
+      <text id="عنوان_شارع" data-name="عنوان شارع" transform="translate(387 343)" fill="#143559" font-size="16" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">عنوان شارع</tspan></text>
+      <text id="اسم_شخص" data-name="اسم شخص" transform="translate(381.054 226.333)" fill="#143559" font-size="16" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">اسم شخص</tspan></text>
+      <path id="Path_30463" data-name="Path 30463" d="M0,0H39.3V16H0Z" transform="translate(171.371 269.81)" fill="#d6eaff"/>
+      <text id="السلام_عليكم_انا_محمد_من_الرياض" data-name="السلام عليكم انا محمد من  الرياض" transform="translate(172.061 282.81)" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0" xml:space="preserve">السلام عليكم انا محمد من  الرياض</tspan></text>
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="26.822" height="12.569" transform="translate(230.039 272.176)" fill="#44b800" opacity="0.16"/>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30464)">
+        <path id="Path_30464-2" data-name="Path 30464" d="M-1.528,0,58.478,13.73l15.3,3.5" transform="translate(299.48 223.36)" fill="none" stroke="#143559" stroke-width="2"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30933)">
+        <path id="Path_30933-2" data-name="Path 30933" d="M-2.768,37.633,120.445-4.3" transform="translate(247.4 148.58)" fill="none" stroke="#143559" stroke-width="2"/>
+      </g>
+      <text id="من" transform="translate(312.101 304.958)" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">من</tspan></text>
+      <rect id="Rectangle_201" data-name="Rectangle 201" width="38.007" height="15.469" transform="translate(225.103 315.589)" fill="#e5d6ff"/>
+      <rect id="Rectangle_200" data-name="Rectangle 200" width="23.007" height="13.469" transform="translate(217.103 293.589)" fill="#e5d6ff"/>
+      <rect id="Rectangle_161" data-name="Rectangle 161" width="55.007" height="16.469" transform="translate(255.103 292.589)" fill="#d6eaff"/>
+      <text id="شارع_العليا_كم_سعر_المنتج_هذا_بالشحن_" data-name="شارع العليا كم سعر المنتج 
+
+
+هذا بالشحن ؟" transform="translate(249.5 304.873)" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-61.93" y="0">شارع العليا كم سعر المنتج</tspan><tspan y="0"> </tspan><tspan x="0" y="8"></tspan><tspan x="0" y="16"></tspan><tspan x="-30.475" y="24">هذا بالشحن ؟</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 12.1, 86)" filter="url(#Path_30934)">
+        <path id="Path_30934-2" data-name="Path 30934" d="M331.673,336.883V409.9H494.891l11.667,17.282v-90.3Z" transform="translate(-181.28 -162.63)" fill="none" stroke="#143559" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

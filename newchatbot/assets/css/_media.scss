@@ -1,0 +1,218 @@
+@media (min-width: 1920px){
+    html{
+        font-size: 0.9rem;
+    }
+    .top-nav ul li a, .button.login, .custom-button{
+        font-size: 26px;
+    }
+    #home .robot img{
+        width:auto
+    }
+    #home .right-ani{
+        @include scale(0.96);
+        
+    }
+    #home .left-ani{
+        @include scale(2.2);
+    }
+    #home .social-icon{
+        transform: scale(1.3);
+    }
+    #home .intro p{
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+}
+@media (min-width: 2200px){
+    html{
+        font-size: 1.2rem ;
+    }
+    .top-nav ul li a, .button.login, .custom-button{
+        font-size: 36px;
+    }
+    #home .robot img{
+        width:500px
+    }
+    #home .intro{
+        margin-top: 12vh;
+    }
+    #home .intro h1{
+        font-size: 6rem;
+    }
+    #home .intro p{
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    #home .right-ani{
+        @include scale(1.8);
+        
+    }
+    #home .left-ani{
+        @include scale(4.2);
+    }
+    #home .social-icon{
+        transform: scale(3.3);
+    }
+    #home .custom-button{
+        float: none !important;
+    }
+}
+@media (min-width: 1920px){
+    html{
+        font-size: 10px;
+    }
+}
+@media (max-width: 1327px){
+    #home .right-ani{
+        @include scale(0.6);
+        
+    }
+    #home .left-ani{
+        @include scale(1.2);
+    }
+    #home .social-icon{
+        transform: scale(0.9);
+        right: 74px;
+    }
+    #home .robot img{
+        width:200px;
+    }
+}
+@media  (max-width: 991px) {
+
+    #home .right-ani{
+        @include scale(0.4);
+        right: 0;
+        bottom: 43px;
+    }
+    #home .left-ani{
+        @include scale(0.88);
+        left: 20px;
+    }
+    #home .social-icon{
+        transform: scale(0.8);
+        right: 50px;
+        bottom: 18px;
+    }
+    #home .intro h1{
+        text-shadow: 1px 1px $secondaryColor;
+    }
+    #home .intro h1{
+        font-size: 3rem;
+    }
+    #home .intro p{
+        text-shadow: 1px 1px $color;
+    }
+    .button.login, .custom-button{
+        font-size: 17px;
+    }
+    .login.button{
+        top:0
+    }
+}   
+@media (max-width: 767px) {
+    #home{
+        background-position: bottom;
+    }
+    #home .robot img{
+        width: 180px;
+        margin-top: -50px;
+    }
+    #home .right-ani{
+        @include scale(0.32) ;
+        bottom: 12px;
+        right: 0;
+    }
+    #home .left-ani{
+        @include scale(0.85);
+    }
+    #home .social-icon{
+        right: 10px;
+    }
+    #home .intro p{
+        color: $secondaryColor;
+        text-shadow: none;
+    }
+    #home .intro h1 br{
+        display: none;
+    }
+    .footer{
+        font-size: 14px;
+    }   
+}
+
+@media (max-width: 580px) {
+    #home .intro{
+        width: 50vw;
+        float: left;
+    }
+    #home .robot{
+        width: 40vw;
+        float: right;
+        text-align: left;
+        padding: 0;
+        margin-right: 15px;
+    }
+    #home .robot img{
+        width: 140px;
+        margin-top: 3rem;
+    }
+    #home .social-icon{
+       
+        right: 15px;
+    }
+    
+    #home .intro h1 span{
+        color: $color;
+    }
+    #home .right-ani, #home .left-ani{
+        display: none;
+    }
+    #home{
+        background: url("../images/home-sm.svg");
+        background-position: bottom;
+        background-size: cover;
+    }
+    #home .footer{
+        color: $color;
+        text-shadow: none;
+    }
+}
+@media (max-width: 480px) {
+    #home .intro{
+        width: auto;
+        float: none;
+    }
+    #home .robot{
+        width: 72vw;
+        float: none;
+        margin-top: 0;
+        text-align: right;
+        
+    }
+    #home .robot img{
+        width: 137px;
+        margin-top: -3rem;
+    }
+    
+    #home .intro h1{
+        font-size: 4rem;
+    }
+    #home .intro h1 {
+        color: $secondaryColor;
+    }
+
+    
+}
+
+
+@media (max-width: 400px) {
+    #home .robot img{
+        width: 115px;
+    }
+    .intro{
+        margin-top: 5vh;
+    }
+}
+
+   
