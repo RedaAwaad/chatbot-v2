@@ -14,13 +14,13 @@
     @notifyCss
     <!--begin::Fonts -->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">
 
     <!--end::Fonts -->
 
     <!--begin::Page Vendors Styles(used by this page) -->
     <link href="{{url('/')}}/dist/assets/plugins/custom/fullcalendar/fullcalendar.bundle{{Session::get('locale') == 'en' ? '':'.rtl'}}.css" rel="stylesheet"
-          type="text/css"/>
+        type="text/css"/>
 
     <!--end::Page Vendors Styles -->
 
@@ -49,7 +49,7 @@
 <!-- begin:: Page -->
 <div class="kt-page-loader kt-page-loader--logo">
     <img alt="Logo" src="{{url('/')}}/mujib/images/logo_bottom.png"/>
-    <div class="kt-spinner kt-spinner--danger"></div>
+    <div class="kt-spinner kt-spinner--custom"></div>
 </div>
 <!-- begin:: Header Mobile -->
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed ">
@@ -73,7 +73,7 @@
 
         <!-- begin:: Aside -->
         <div class="kt-aside  kt-aside--fixed  kt-grid__item kt-grid kt-grid--desktop kt-grid--hor-desktop"
-             id="kt_aside">
+            id="kt_aside">
 
             <!-- begin:: Aside -->
             <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
@@ -84,34 +84,38 @@
                 </div>
                 <div class="kt-aside__brand-tools">
                     <button class="kt-aside__brand-aside-toggler" id="kt_aside_toggler">
-								<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                           width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                           class="kt-svg-icon">
-										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-											<polygon points="0 0 24 0 24 24 0 24"/>
-											<path
-                                                d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z"
-                                                fill="#000000" fill-rule="nonzero"
-                                                transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
-											<path
-                                                d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z"
-                                                fill="#000000" fill-rule="nonzero" opacity="0.3"
-                                                transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
-										</g>
-									</svg></span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                   width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-											<polygon points="0 0 24 0 24 24 0 24"/>
-											<path
-                                                d="M12.2928955,6.70710318 C11.9023712,6.31657888 11.9023712,5.68341391 12.2928955,5.29288961 C12.6834198,4.90236532 13.3165848,4.90236532 13.7071091,5.29288961 L19.7071091,11.2928896 C20.085688,11.6714686 20.0989336,12.281055 19.7371564,12.675721 L14.2371564,18.675721 C13.863964,19.08284 13.2313966,19.1103429 12.8242777,18.7371505 C12.4171587,18.3639581 12.3896557,17.7313908 12.7628481,17.3242718 L17.6158645,12.0300721 L12.2928955,6.70710318 Z"
-                                                fill="#000000" fill-rule="nonzero"/>
-											<path
-                                                d="M3.70710678,15.7071068 C3.31658249,16.0976311 2.68341751,16.0976311 2.29289322,15.7071068 C1.90236893,15.3165825 1.90236893,14.6834175 2.29289322,14.2928932 L8.29289322,8.29289322 C8.67147216,7.91431428 9.28105859,7.90106866 9.67572463,8.26284586 L15.6757246,13.7628459 C16.0828436,14.1360383 16.1103465,14.7686056 15.7371541,15.1757246 C15.3639617,15.5828436 14.7313944,15.6103465 14.3242754,15.2371541 L9.03007575,10.3841378 L3.70710678,15.7071068 Z"
-                                                fill="#000000" fill-rule="nonzero" opacity="0.3"
-                                                transform="translate(9.000003, 11.999999) rotate(-270.000000) translate(-9.000003, -11.999999) "/>
-										</g>
-									</svg></span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                class="kt-svg-icon">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <polygon points="0 0 24 0 24 24 0 24"/>
+                                    <path
+                                        d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z"
+                                        fill="#000000" fill-rule="nonzero"
+                                        transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999) "/>
+                                    <path
+                                        d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z"
+                                        fill="#000000" fill-rule="nonzero" opacity="0.3"
+                                        transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999) "/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <polygon points="0 0 24 0 24 24 0 24"/>
+                                    <path
+                                        d="M12.2928955,6.70710318 C11.9023712,6.31657888 11.9023712,5.68341391 12.2928955,5.29288961 C12.6834198,4.90236532 13.3165848,4.90236532 13.7071091,5.29288961 L19.7071091,11.2928896 C20.085688,11.6714686 20.0989336,12.281055 19.7371564,12.675721 L14.2371564,18.675721 C13.863964,19.08284 13.2313966,19.1103429 12.8242777,18.7371505 C12.4171587,18.3639581 12.3896557,17.7313908 12.7628481,17.3242718 L17.6158645,12.0300721 L12.2928955,6.70710318 Z"
+                                        fill="#000000" fill-rule="nonzero"/>
+                                    <path
+                                        d="M3.70710678,15.7071068 C3.31658249,16.0976311 2.68341751,16.0976311 2.29289322,15.7071068 C1.90236893,15.3165825 1.90236893,14.6834175 2.29289322,14.2928932 L8.29289322,8.29289322 C8.67147216,7.91431428 9.28105859,7.90106866 9.67572463,8.26284586 L15.6757246,13.7628459 C16.0828436,14.1360383 16.1103465,14.7686056 15.7371541,15.1757246 C15.3639617,15.5828436 14.7313944,15.6103465 14.3242754,15.2371541 L9.03007575,10.3841378 L3.70710678,15.7071068 Z"
+                                        fill="#000000" fill-rule="nonzero" opacity="0.3"
+                                        transform="translate(9.000003, 11.999999) rotate(-270.000000) translate(-9.000003, -11.999999) "/>
+                                </g>
+                            </svg>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -121,10 +125,10 @@
             <!-- begin:: Aside Menu -->
             <div class="kt-aside-menu-wrapper kt-grid__item kt-grid__item--fluid" id="kt_aside_menu_wrapper">
                 <div id="kt_aside_menu" class="kt-aside-menu " data-ktmenu-vertical="1" data-ktmenu-scroll="1"
-                     data-ktmenu-dropdown-timeout="500">
+                    data-ktmenu-dropdown-timeout="500">
                     <ul class="kt-menu__nav ">
                         <li class="kt-menu__item  kt-menu__item--active" aria-haspopup="true"><a href="{{url('/admin')}}"
-                                                                                                 class="kt-menu__link "><span
+                                                                                                class="kt-menu__link "><span
                                     class="kt-menu__link-icon"><svg xmlns="http://www.w3.org/2000/svg"
                                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
                                                                     width="24px" height="24px" viewBox="0 0 24 24"
@@ -148,8 +152,8 @@
                             <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span
                                     class="kt-menu__link-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                         class="kt-svg-icon">
+                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        class="kt-svg-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 												<rect x="0" y="0" width="24" height="24"/>
 												<path
@@ -176,16 +180,16 @@
                             <li class="kt-menu__item  kt-menu__item--submenu" aria-haspopup="true"
                                 data-ktmenu-submenu-toggle="hover">
                                 <a href="{{route('users.index')}}"
-                                   class="kt-menu__link kt-menu__toggle">
+                                class="kt-menu__link kt-menu__toggle">
                                 <span class="kt-menu__link-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-                                         viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                        viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                 <polygon points="0 0 24 0 24 24 0 24"/>
                                                 <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
-                                                      fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+                                                    fill="#000000" fill-rule="nonzero" opacity="0.3"/>
                                                 <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
-                                                      fill="#000000" fill-rule="nonzero"/>
+                                                    fill="#000000" fill-rule="nonzero"/>
                                         </g>
                                     </svg>
                                 </span>
@@ -198,8 +202,8 @@
                             <a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span
                                     class="kt-menu__link-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                         class="kt-svg-icon">
+                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                        class="kt-svg-icon">
 										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 												<rect x="0" y="0" width="24" height="24"/>
 												<polygon fill="#000000" opacity="0.3" points="5 15 3 21.5 9.5 19.5"/>
@@ -225,19 +229,19 @@
                             <a href="{{route('users.statistics')}}" class="kt-menu__link kt-menu__toggle"><span
                                     class="kt-menu__link-icon">
 										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-                                             viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
 											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 													<rect x="0" y="0" width="24" height="24"/>
 													<rect fill="#000000" opacity="0.3" x="7" y="4" width="3" height="13"
-                                                          rx="1.5"/>
+                                                        rx="1.5"/>
 													<rect fill="#000000" opacity="0.3" x="12" y="9" width="3" height="8"
-                                                          rx="1.5"/>
+                                                        rx="1.5"/>
 													<path
                                                         d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
                                                         fill="#000000" fill-rule="nonzero"/>
 													<rect fill="#000000" opacity="0.3" x="17" y="11" width="3"
-                                                          height="6" rx="1.5"/>
+                                                        height="6" rx="1.5"/>
 											</g>
 										</svg></span><span class="kt-menu__link-text">{{__('chats.statistic')}}</span></a>
                     </ul>
@@ -249,46 +253,42 @@
     </div>
 
     <!-- end:: Aside -->
-    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
+    <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper pt-0" 
+    id="kt_wrapper" style="min-height: 100vh !important;">
 
         <!-- begin:: Header -->
-        <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed ">
-
+        <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed pt-0">
             <!-- begin:: Header Menu -->
+            <!-- custom Comment -- this element related to header menu on small screens -->
             <div class="kt-header-menu-wrapper" id="kt_header_menu_wrapper">
-                <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
+                <!-- <div id="kt_header_menu" class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default ">
                     <div id="kt_header_menu"
-                         class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default px-4 px-lg-0">
-                        <!-- <h4 class="mt-4">Dashboard</h4> -->
-                    <!-- <a href="index.html" class="mt-4 d-inline-block">
-                            <img alt="Logo" src="{{url('/')}}/dist/assets/media/logo.png" width="100" />
-                        </a> -->
+                        class="kt-header-menu kt-header-menu-mobile  kt-header-menu--layout-default px-4 px-lg-0">
                     </div>
-                </div>
+                </div> -->
             </div>
-
             <!-- end:: Header Menu -->
 
             <!-- begin:: Header Topbar -->
             <div class="kt-header__topbar">
                 <!--begin: Language bar -->
                 <div class="kt-header__topbar-item kt-header__topbar-item--langs" data-toggle="kt-tooltip"
-                     title="Language" data-placement="right">
+                    title="Language" data-placement="right">
                     <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
-									<span class="kt-header__topbar-icon">
-										<svg xmlns="http://www.w3.org/2000/svg"
-                                             xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-                                             viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
-											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<rect x="0" y="0" width="24" height="24"/>
-													<path
-                                                        d="M13,18.9450712 L13,20 L14,20 C15.1045695,20 16,20.8954305 16,22 L8,22 C8,20.8954305 8.8954305,20 10,20 L11,20 L11,18.9448245 C9.02872877,18.7261967 7.20827378,17.866394 5.79372555,16.5182701 L4.73856106,17.6741866 C4.36621808,18.0820826 3.73370941,18.110904 3.32581341,17.7385611 C2.9179174,17.3662181 2.88909597,16.7337094 3.26143894,16.3258134 L5.04940685,14.367122 C5.46150313,13.9156769 6.17860937,13.9363085 6.56406875,14.4106998 C7.88623094,16.037907 9.86320756,17 12,17 C15.8659932,17 19,13.8659932 19,10 C19,7.73468744 17.9175842,5.65198725 16.1214335,4.34123851 C15.6753081,4.01567657 15.5775721,3.39010038 15.903134,2.94397499 C16.228696,2.49784959 16.8542722,2.4001136 17.3003976,2.72567554 C19.6071362,4.40902808 21,7.08906798 21,10 C21,14.6325537 17.4999505,18.4476269 13,18.9450712 Z"
-                                                        fill="#000000" fill-rule="nonzero"/>
-													<circle fill="#000000" opacity="0.3" cx="12" cy="10" r="6"/>
-											</g>
-										</svg>
-                                        <!-- <img class="" src="{{url('/')}}/dist/assets/media/flags/226-united-states.svg" alt="" /> -->
-									</span>
+                        <span class="kt-header__topbar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <rect x="0" y="0" width="24" height="24"/>
+                                        <path
+                                            d="M13,18.9450712 L13,20 L14,20 C15.1045695,20 16,20.8954305 16,22 L8,22 C8,20.8954305 8.8954305,20 10,20 L11,20 L11,18.9448245 C9.02872877,18.7261967 7.20827378,17.866394 5.79372555,16.5182701 L4.73856106,17.6741866 C4.36621808,18.0820826 3.73370941,18.110904 3.32581341,17.7385611 C2.9179174,17.3662181 2.88909597,16.7337094 3.26143894,16.3258134 L5.04940685,14.367122 C5.46150313,13.9156769 6.17860937,13.9363085 6.56406875,14.4106998 C7.88623094,16.037907 9.86320756,17 12,17 C15.8659932,17 19,13.8659932 19,10 C19,7.73468744 17.9175842,5.65198725 16.1214335,4.34123851 C15.6753081,4.01567657 15.5775721,3.39010038 15.903134,2.94397499 C16.228696,2.49784959 16.8542722,2.4001136 17.3003976,2.72567554 C19.6071362,4.40902808 21,7.08906798 21,10 C21,14.6325537 17.4999505,18.4476269 13,18.9450712 Z"
+                                            fill="#000000" fill-rule="nonzero"/>
+                                        <circle fill="#000000" opacity="0.3" cx="12" cy="10" r="6"/>
+                                </g>
+                            </svg>
+                            <!-- <img class="" src="{{url('/')}}/dist/assets/media/flags/226-united-states.svg" alt="" /> -->
+                        </span>
                     </div>
                     <div
                         class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround">
@@ -312,7 +312,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <!--end: Language bar -->
 
                 <!--begin: User Bar -->
@@ -321,51 +320,38 @@
                         <div class="kt-header__topbar-user">
                             <span class="kt-header__topbar-welcome kt-hidden-mobile">Hi,</span>
                             <span class="kt-header__topbar-username kt-hidden-mobile">{{Auth::user()->full_name}}</span>
-                            <img class="kt-hidden" alt="Pic" src="{{url('/')}}/dist/assets/media/users/300_25.jpg"/>
 
-                            <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                            <span
-                                class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold"></span>
+                            <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg 
+                            kt-badge--rounded kt-badge--bold">
+                                <img alt="Pic" src="{{url('/')}}/dist/assets/media/users/100_3.jpg"/>
+                            </span>
                         </div>
                     </div>
-                    <div
-                        class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
-
+                    <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right 
+                        dropdown-menu-anim dropdown-menu-top-unround">
                         <!--begin: Head -->
-                        <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x"
-                             style="background-image: url({{url('/')}}/dist/assets/media/misc/bg-1.jpg)">
+                        <div class="kt-user-card kt-user-card--skin-dark kt-notification-item-padding-x">
                             <div class="kt-user-card__avatar">
-                                <img class="kt-hidden" alt="Pic" src="{{url('/')}}/dist/assets/media/users/300_25.jpg"/>
-
-                                <!--use below badge element instead the user avatar to display username's first letter(remove kt-hidden class to display it) -->
-                                <span
-                                    class="kt-badge kt-badge--lg kt-badge--rounded kt-badge--bold kt-font-success"></span>
+                                <span class="kt-badge kt-badge--lg 
+                                kt-badge--rounded kt-badge--bold kt-font-success mt-2">
+                                    <img alt="Pic" src="{{url('/')}}/dist/assets/media/users/100_3.jpg"/>
+                                </span>
                             </div>
-                            <div class="kt-user-card__name">
-                               {{Auth::user()->full_name}}
-                            </div>
-                            <div class="kt-user-card__badge">
-                            </div>
+                            <div class="kt-user-card__name">{{Auth::user()->full_name}}</div>
                         </div>
-
                         <!--end: Head -->
-
                         <!--begin: Navigation -->
                         <div class="kt-notification">
                             <div class="kt-notification__custom kt-space-between">
-                                <a href="{{route('logout')}}"
-                                   class="btn btn-label btn-label-brand btn-sm btn-bold">{{__('chats.Sign_Out')}}</a>
-
+                                <a href="{{route('logout')}}" class="btn btn-label btn-label-brand btn-sm btn-bold">{{__('chats.Sign_Out')}}</a>
                             </div>
                         </div>
-
                         <!--end: Navigation -->
                     </div>
                 </div>
 
                 <!--end: User Bar -->
             </div>
-
             <!-- end:: Header Topbar -->
         </div>
 

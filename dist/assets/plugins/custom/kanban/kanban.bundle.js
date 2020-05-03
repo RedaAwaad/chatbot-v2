@@ -119,7 +119,7 @@
                             beforeSend: function(){
                                 $('#kanban4').hide();
 
-                                $('#uploadStatus').html('<img src="http://mujib-chatbot.com/cdn/bot.gif" style=""/>');
+                                $('#uploadStatus').html('<img src="http://mujib-chatbot.com/cdn/bot.gif">');
                             },
                             success: function (response) {
                                 $('#kanban4').show();
@@ -150,7 +150,7 @@
                         // Edit 4 change data order and parent id
                         var currparentID = e.parentNode.getAttribute('data-board-id');
                         var oldParentId = e.getAttribute('data-parent-id');
-                        console.log('draged', oldParentId, currparentID);
+                        // console.log('draged', oldParentId, currparentID);
 
                         // Data order for tasks
                         var currBoardEle = e.parentNode.childNodes;
@@ -162,7 +162,7 @@
                                 taskOrder: ++index,
                                 content: currEle.textContent
                             }
-                            console.log(boardElements);
+                            // console.log(boardElements);
 
                         });
 

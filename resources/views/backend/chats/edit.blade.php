@@ -25,7 +25,7 @@
 <div class="kt-portlet">
     <div class="kt-portlet__head">
         <div class="kt-portlet__head-label">
-            <h3 class="kt-portlet__head-title kt-font-primary">
+            <h3 class="kt-portlet__head-title">
                 Edit for  <small>{{$chat->name}}</small>
             </h3>
         </div>
@@ -41,23 +41,23 @@
           @method('PUT')
             <div class="row">
                 <div class="col-md-6">
-                    <label for="text2">{{__('chats.title_ar')}}:</label>
+                    <label class="input__label" for="text2">{{__('chats.title_ar')}}:</label>
                     <input type="text" id="fb" value="{{$chat->name}}" class="form-control  " name="name">
                     <br>
                 </div>
                 <div class="col-md-6">
-                    <label for="text3">{{__('chats.subhead')}} :</label>
+                    <label class="input__label" for="text3">{{__('chats.subhead')}} :</label>
                     <input type="text" id="text3" value="{{$chat->subhead}}" class="form-control  " name="subhead">
                     <br>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="text3">{{__('chats.desc')}} :</label>
+                    <label class="input__label" for="text3">{{__('chats.desc')}} :</label>
                     <textarea class="form-control  " name="desc">{{$chat->desc}}</textarea>
                     <br>
                 </div>
                 <div class="col-md-6">
-                    <label for="text3">{{__('chats.error_message')}} :</label>
+                    <label class="input__label" for="text3">{{__('chats.error_message')}} :</label>
                     <textarea class="form-control  " name="error_message">{{isset($error->message)? $error->message :"نأسف لم نتلقي اي اجابة صحيحة"}}</textarea>
                     <br>
                 </div>
@@ -80,7 +80,9 @@
                 </div>
                 <br>
             </div>
-            <button class="btn btn-primary">{{ __('backend/settings.submit') }}</button>
+            <div class="text-center">
+                <button class="btn btn-brand setting_submit_btn">{{ __('backend/settings.submit') }}</button>
+            </div>
         </form>
     </div>
 </div>

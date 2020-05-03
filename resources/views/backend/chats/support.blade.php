@@ -13,7 +13,7 @@
 <div class="kt-portlet">
     <div class="kt-portlet__head">
         <div class="kt-portlet__head-label">
-            <h3 class="kt-portlet__head-title kt-font-primary">
+            <h3 class="kt-portlet__head-title">
                 Report for  <small>{{$chat->name}}</small>
             </h3>
         </div>

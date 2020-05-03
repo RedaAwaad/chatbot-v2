@@ -99,3 +99,7 @@
 .chatbox__upload-image--body .custom-file-label {background-color: #1abc9c;}
 
 .chatbox .color-schema-container svg path {fill: #1abc9c;}
+
+.chatbox-nav .kt-svg-icon g [fill] {
+  fill: #1abc9c !important;
+}

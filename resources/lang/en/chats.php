@@ -58,5 +58,6 @@ return [
     'Total_Users' => 'Total Users',
     'Total_Chats' => 'Total Chats',
     'Total_Errors' => 'Total Errors',
-    'Report_for' => 'Report for'
+    'Report_for' => 'Report for',
+    'loading_data'=>'Loading Data ...',
 ];

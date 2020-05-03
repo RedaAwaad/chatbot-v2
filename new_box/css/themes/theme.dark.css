@@ -98,3 +98,7 @@
 }
 
 .chatbox .color-schema-container svg path {fill: #1c1c2b;}
+
+.chatbox-nav .kt-svg-icon g [fill] {
+  fill: #1c1c2b !important;
+}

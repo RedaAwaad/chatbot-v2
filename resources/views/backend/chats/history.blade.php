@@ -13,7 +13,7 @@
 <div class="kt-portlet">
     <div class="kt-portlet__head">
         <div class="kt-portlet__head-label">
-            <h3 class="kt-portlet__head-title kt-font-primary">
+            <h3 class="kt-portlet__head-title">
                 History for  <small>{{isset($data[0]->name)? $data[0]->name : ""}}</small>
             </h3>
         </div>

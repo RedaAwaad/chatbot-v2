@@ -189,6 +189,8 @@ $(document).ready(function() {
     $(document).on("click", ".add-newe-qu", function() {
         //Hndle Sidebar Regarding Button and Question Type
         questionName = $(this).attr("data-id");
+
+        loadingData();
     });
 
     //When Submit Text Data
@@ -242,9 +244,18 @@ $(document).ready(function() {
         $("#kt_demo_panel").addClass("kt-demo-panel--on").after('<div class="kt-demo-panel-overlay"></div>');
     }
 
+    // Loading Data Overlay Function
+    function loadingData() {
+      $('#kt_demo_panel.overflow').removeClass('overflow');
+      $('#loadingData').fadeOut();
+    }
+
     //Handle Edit Button to Edit Elements
     $(document).on("click", ".edit-curr-question", function() {
         $(".choice-box-type").fadeOut();
+        // Open Aside Container
+        openSidebar();
+
         questionName = $(this).attr("data-id");
         $.ajaxSetup({
             headers: {
@@ -259,7 +270,9 @@ $(document).ready(function() {
 
             data: { id: questionName.split("").splice(1, questionName.length).join("") },
             success: function(response) {
-                openSidebar();
+              // When data loaded this function will remove loading overlay
+              loadingData()
+
                 $('#Edit-kanban-add-board-ar').summernote('code', response.text_ar);
                 $('#Edit-kanban-add-board').summernote('code',response.text);
                 $("#Edit-question_type").val(response.answer_type);
@@ -358,9 +371,13 @@ $(document).ready(function() {
     }
 
     //Hide Sidebar
-    $("#kt_demo_panel_close").on("click", function() {
+    $(document).on("click", "#kt_demo_panel_close, .kt-demo-panel-overlay", function() {
         hideSideBar();
-        $(".edit-task").fadeIn()
+        $(".edit-task").fadeIn();
+
+        $('#kt_demo_panel.aside_container_content').addClass('overflow');
+        $('#loadingData').fadeIn();
+
     });
     //Submit Edit Text To the current Question
 

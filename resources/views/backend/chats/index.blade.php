@@ -9,7 +9,7 @@
     @push('css')
         <link href="{{ url('/backend') }}/vendors/sweetalert/sweetalert.css" rel="stylesheet">
     @endpush
-    <div class="kt-portlet kt-portlet--mobile">
+    <div class="kt-portlet kt-portlet--mobile mt-5 mt-md-0">
         <div class="kt-portlet__head kt-portlet__head--lg">
             <div class="kt-portlet__head-label">
                 <span class="kt-portlet__head-icon">
@@ -38,9 +38,7 @@
     <!--Begin::Section-->
     <div class="row" id="chatbotsContainer">
         @foreach($chats as $chat)
-            <div class="col-md-6">
-
-                <!--Begin::Portlet-->
+            <div class="col-md-6 col-lg-4 mx-auto">
                 <!-- Start First Chatbot -->
                 <div class="kt-portlet kt-portlet--height-fluid">
                     <div class="kt-portlet__head kt-portlet__head--noborder">
@@ -110,17 +108,11 @@
                         </div>
                     </div>
                     <div class="kt-portlet__body">
-
                         <!--begin::Widget -->
                         <div class="kt-widget kt-widget--user-profile-2">
                             <div class="kt-widget__head">
                                 <div class="kt-widget__media">
-                                    <img class="kt-widget__img kt-hidden-" width="80px"
-                                         src="{{url('/').$chat->image}}" alt="image">
-                                    <div
-                                        class="kt-widget__pic kt-widget__pic--success kt-font-success kt-font-boldest kt-hidden">
-                                        ChS
-                                    </div>
+                                    <img class="kt-widget__img radius-none" src="{{url('/').$chat->image}}" alt="image">
                                 </div>
                                 <div class="kt-widget__info">
                                     <Span class="kt-widget__username">{{$chat->name}}</Span>
@@ -144,7 +136,7 @@
                             </div>
                             <div class="kt-widget__footer">
                                 <a href="{{route('admin.chats.build',$chat->id)}}"
-                                   class="btn btn-label-brand btn-lg">{{__('chats.edit')}}</a>
+                                class="btn btn-label-brand btn-lg">{{__('chats.edit')}}</a>
                                 <!-- id="kt_app_chat_launch_btn" data-toggle="modal" data-target="#kt_chat_modal" -->
                             </div>
                         </div>
@@ -153,7 +145,6 @@
                     </div>
                 </div>
                 <!-- End First Chatbot -->
-                <!--End::Portlet-->
             </div>
         @endforeach
     </div>
@@ -167,19 +158,38 @@
         <script src="{{ url('/backend') }}/vendors/sweetalert/sweetalert.js"></script>
         <script src="{{ url('/dist') }}/assets/js/main.js"></script>
         <script>
-            function delete_confirmation(id) {
-                swal.fire({
+            var textLang = '';
+
+            if(document.querySelector('html').getAttribute('dir') === 'rtl') {
+                textLang = {
+                    title: 'هل انت متأكد؟',
+                    text: 'لا يمكنك استرجاع هذه البيانات مرة أخرى!',
+                    cancelText: 'إلغاء',
+                    buttonText: 'نعم، تأكيد الحذف'
+                }
+            } else {
+                textLang = {
                     title: 'Are you sure?',
-                    text: "You will be able to revert this!",
-                    type: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
+                    text: 'You will not be able to revert this!',
+                    cancelText: 'No, cancel',
+                    buttonText: 'Yes, delete it!'
+                }
+            }
+
+            function delete_confirmation(id){
+                swal.fire({
+                title: textLang.title,
+                text: textLang.text,
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3b536a',
+                cancelButtonColor: '#d33',
+                cancelButtonText: textLang.cancelText,
+                confirmButtonText: textLang.buttonText
                 }).then((result) => {
                     if (result.value) {
                         event.preventDefault();
-                        document.getElementById('delete-form-' + id).submit();
+                        document.getElementById('delete-form-'+id).submit();
                     }
                 })
             }
@@ -190,6 +200,7 @@
 
                     reader.onload = function(e) {
                         $('#blah').attr('src', e.target.result);
+                        $('#blah').addClass('show');
                     }
 
                     reader.readAsDataURL(input.files[0]); // convert to base64 string

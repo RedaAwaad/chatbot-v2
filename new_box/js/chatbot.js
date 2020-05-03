@@ -26,7 +26,7 @@ if (chat_selected == "37") {
 }
 $(document).ready(function() {
     if (localStorage.chatbotTheme) {
-        var url = "link[href^='" + url_assets + "/css/themes/']";
+        var url = "link[href*='" + url_assets + "/css/themes/']";
         $(url).attr("href", localStorage.getItem("chatbotTheme"));
 
         $($("[data-theme='" + localStorage.getItem("chatbotTheme") + "']")[0])
@@ -51,6 +51,7 @@ $(document).ready(function() {
     // Show Color Schema
     $("#colorSchemaContainer").on("click", function() {
         $(this).addClass("show");
+        
     });
 
     // Hide Color Schema
@@ -59,6 +60,15 @@ $(document).ready(function() {
             $("#colorSchemaContainer").removeClass("show");
         }
     });
+
+    // Hide Dropdown mwnu on click on chatbox body
+    $(".chatbot-scroll").on("click", function() {
+        if ($("#chatboxDropdown").hasClass("dropdown--toggle")) {
+            $("#chatboxDropdown").removeClass("dropdown--toggle");
+            $("#colorSchemaContainer").removeClass("show");
+        }
+    });
+
     // Init Simple Scroll Plugin ==============
     new SimpleBar($("#chatbotScroll")[0]);
     var question_id = "entry";
@@ -296,27 +306,20 @@ $(document).ready(function() {
             rateing = "Rate";
         }
         var finsh =
-            `<div class="rating-container">
-    <div id ="ending" class="chatbox__text">` +
-            ending +
-            `</div>
-  <div class="feedback">
-    <div class="rating">
-      <input type="radio" name="rating" value="1" id="rating-5" class="rate">
-      <label for="rating-5"></label>
-      <input type="radio" name="rating" value="2" id="rating-4" class="rate">
-      <label for="rating-4"></label>
-      <input type="radio" name="rating" value="3" id="rating-3" class="rate">
-      <label for="rating-3"></label>
-      <input type="radio" name="rating" value="4" id="rating-2" class="rate">
-      <label for="rating-2"></label>
-      <input type="radio" name="rating" value="5" id="rating-1" class="rate">
-      <label for="rating-1"></label>
-    </div>
-    <button class="rate_it" id="rateit" style="background:#f79621;color : #fff" >` +
-            rateing +
-            `</button>
-    </div>`;
+            `<div class="rating-container"><div id ="ending" class="chatbox__text">
+            ${ ending }</div><div class="feedback"><div class="rating">
+            <input type="radio" name="rating" value="1" id="rating-5" class="rate">
+            <label for="rating-5"></label>
+            <input type="radio" name="rating" value="2" id="rating-4" class="rate">
+            <label for="rating-4"></label>
+            <input type="radio" name="rating" value="3" id="rating-3" class="rate">
+            <label for="rating-3"></label>
+            <input type="radio" name="rating" value="4" id="rating-2" class="rate">
+            <label for="rating-2"></label>
+            <input type="radio" name="rating" value="5" id="rating-1" class="rate">
+            <label for="rating-1"></label>
+            </div><button class="rate_it" id="rateit"> ${ rateing }</button></div>`;
+
         $("#chatboxDropdown").removeClass("dropdown--toggle");
         setTimeout(function() {
             addAnswer(finsh, []);

@@ -65,30 +65,15 @@
 <!-- Progress bar -->
 
 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-
     <!-- begin:: Content -->
     <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
         <div class="row hidden-item" style="display: none">
-            <div class="col-lg-12">
-                <div class="kt-portlet">
-                    <div class="kt-portlet__head">
-                        <div class="kt-portlet__head-label">
-                            <h3 class="kt-portlet__head-title">
-                                Kanban Interactivity Demo
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="kt-portlet__body">
-                        <div id="kanban3"></div>
-                        <div class="kanban-toolbar">
-                            <button class="btn btn-brand" id="addDefault">Add "Default" board</button>
-                            <button class="btn btn-danger" id="addToDo">Add element in "To Do" Board</button>
-                            <button class="btn btn-success" id="removeBoard">Remove "Done" Board</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="kanban3"></div>
+            <button class="btn btn-brand" id="addDefault">Add "Default" board</button>
+            <button class="btn btn-danger" id="addToDo">Add element in "To Do" Board</button>
+            <button class="btn btn-success" id="removeBoard">Remove "Done" Board</button>
         </div>
+        <!-- Build page With kanban4 ID to generate all boards -->
         <div class="row">
             @include('backend.chats.box')
             <div class="col-lg-12">
@@ -97,18 +82,14 @@
                         <div class="kt-portlet__head-label">
                             <h3 class="kt-portlet__head-title">
                                 <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                        class="kt-svg-icon">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z"
-                                                fill="#000000" />
-                                            <path
-                                                d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z"
-                                                fill="#000000" opacity="0.3" />
-                                        </g>
-                                    </svg></span> {{__('chats.create_scenario')}}
+                                width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24" />
+                                    <path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z"
+                                        fill="#000000" />
+                                    <path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="#000000" opacity="0.3" />
+                                </g>
+                                </svg></span> {{__('chats.create_scenario')}}
                             </h3>
                         </div>
                         <div class="kt-portlet__head-toolbar">
@@ -123,14 +104,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="kt-portlet__body">
-                        <div id="uploadStatus" style="text-align: center;"></div>
-                        <div id="kanban4">
-                        </div>
+                    <div class="kt-portlet__body build_page_content_row">
+                        <div id="uploadStatus" class="text-center"></div>
+                        <div id="kanban4"></div>
                         <div class="kanban-toolbar">
-                            <div class="row">
-
-                            </div>
+                            <div class="row"></div>
                         </div>
                     </div>
                 </div>
@@ -152,24 +130,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div>
+                <div class="mb-3">
                     <textarea id="kanban-add-board" class="summarnote_en" name="text" required></textarea>
-                    <br />
-                    <textarea id="kanban-add-board-ar" class="summarnote_ar" name="text_ar" required></textarea>><br />
+                </div>
+                <div>
+                    <textarea id="kanban-add-board-ar" class="summarnote_ar" name="text_ar" required></textarea>
+                </div>
+                <div class="mt-4">
                     <select name="question_type" style="width: 100%" id="questionType" class="form-control kt_select2_1">
                         <option value="choices">{{__('chats.choicing')}}</option>
-                    </select><br />
-                    <br />
+                    </select>
+                </div>
+                <div class="mt-3">
                     <label class="kt-checkbox">
                         <input type="checkbox" id="isEntryPoint">{{__('chats.is_entry')}}
                         <span></span>
                     </label>
-                    <br />
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('chats.cancel')}}</button>
-                <button type="button" class="btn btn-success" id="addBoard">{{__('chats.add')}}</button>
+                <button type="button" class="btn btn-secondary setting_submit_btn" data-dismiss="modal">{{__('chats.cancel')}}</button>
+                <button type="button" class="btn btn-brand setting_submit_btn" id="addBoard">{{__('chats.add')}}</button>
             </div>
         </div>
     </div>
@@ -188,8 +169,8 @@
                 <div class="question-content"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('chats.cancel')}}</button>
-                <button type="button" id="removeBoard2" class="btn btn-danger">{{__('chats.delete')}}</button>
+                <button type="button" class="btn btn-secondary setting_submit_btn" data-dismiss="modal">{{__('chats.cancel')}}</button>
+                <button type="button" id="removeBoard2" class="btn btn-brand setting_submit_btn">{{__('chats.delete')}}</button>
             </div>
         </div>
     </div>
@@ -209,22 +190,29 @@
                 <div class="current-answer-content"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('chats.cancel')}}</button>
-                <button type="button" id="deleteAnswerBTN" class="btn btn-danger">{{__('chats.delete')}}</button>
+                <button type="button" class="btn btn-secondary setting_submit_btn" data-dismiss="modal">{{__('chats.cancel')}}</button>
+                <button type="button" id="deleteAnswerBTN" class="btn btn-brand setting_submit_btn">{{__('chats.delete')}}</button>
             </div>
         </div>
     </div>
 </div>
 <!-- For New Message Questions && Answers Aside-->
-<div id="kt_demo_panel" class="kt-demo-panel">
+<div id="kt_demo_panel" class="kt-demo-panel aside_container_content overflow">
     <div class="kt-demo-panel__head">
         <h3 class="kt-demo-panel__title">
 
         </h3>
         <a href="#" class="kt-demo-panel__close" id="kt_demo_panel_close"><i class="flaticon2-delete"></i></a>
     </div>
-    <div class="kt-demo-panel__body">
+    <div class="kt-demo-panel__body aside_container h-auto">
         <!-- Message Body -->
+        <div class="loading_data" id="loadingData">
+            <div class="text-center">
+                <div class="text-center mb-3">{{__('chats.loading_data')}}</div>
+                <div class="kt-spinner kt-spinner--custom"></div>
+            </div>
+        </div>
+
         <div class="text-box-type" style="display: none;">
             <span class="lead">This input expects user's reply only!</span>
             <div class="h5 mt-4 mb-3">Type: Text</div>
@@ -246,56 +234,44 @@
             <button class="btn btn-primary" id="submitTextType">{{__('chats.submit')}}</button>
         </div>
         <div class="choice-box-type">
-            <div class="kanban-toolbar__title lead">
-
-            </div>
-            <div class="form-group mt-3">
-                <label>{{__('chats.add_new_answer')}}</label><br>
+            <label class="mb-3">{{__('chats.add_new_answer')}}</label>
+            <div class="mb-3">
                 <textarea id="kanban-add-task" class="summarnote_en" name="kanban-add-task" required></textarea>
-                <br />
+            </div>
+            <div class="mb-4">
                 <textarea id="kanban-add-task-ar" class="summarnote_ar" name="kanban-add-task-ar" required></textarea>
-                <br>
-                <label>{{__('chats.next_question')}}</label><br>
+            </div>
+            <div class="mb-3">
+                <label>{{__('chats.next_question')}}</label>
                 <select id="next-choice-question" class="form-control kt_select2_1" style="width: 100%" required>
                     <option value="">{{__('chats.next_question')}}</option>
                     @foreach($chat->questions as $question)
                         <option value="{{ $question->id }}">{{ $question->text }}</option>
                     @endforeach
                 </select>
-
-                <br />
-                <div class="form-group form-group-last row">
-                    <label class="col-form-label col-lg-12 col-sm-12">{{__('chats.fqa')}}</label>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-
-                        <input id="kt_tagify_1" name='tags' placeholder='type...' value='sample,' autofocus
-                            data-blacklist=''>
-
-                        <div class="kt-margin-t-10">
-                        </div>
-                    </div>
+            </div>
+            <div class="form-group form-group-last mb-3 row">
+                <label class="col-form-label col-lg-12 col-sm-12">{{__('chats.fqa')}}</label>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <input id="kt_tagify_1" name='tags' placeholder='type...' value='sample,' autofocus>
+                    <div class="kt-margin-t-10"></div>
                 </div>
-                <br />
-                <div class="endPointTextChoice" style="display: none;">
-                    <input type="text" id="endPointText" class="form-control" placeholder="End Point Text" />
-                    <br />
-                </div>
-                <span class="kt-switch kt-switch--danger kt-switch--sm">
-                    <label for="isEndPointChoice" class="mb-3 pl-2">
-                        <input type="checkbox" id="isEndPointChoice" class="mb-4">
-                        <span></span>
-                        <p class="d-inline-block pl-1 pt-1 lead">{{__('chats.is_end')}}</p>
-                    </label>
-                </span><br>
-                <span class="kt-switch kt-switch--danger kt-switch--sm">
-                    <label for="isICON" class="mb-3 pl-2">
-                        <input type="checkbox" id="isICON" class="mb-4">
-                        <span></span>
-                        <p class="d-inline-block pl-1 pt-1 lead">{{__('chats.as_icon')}}</p>
-                    </label>
-                </span>
-                <br />
-                <button type="submit" class="btn btn-brand" id="addTask">{{__('chats.submit')}}</button>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+                <label for="isEndPointChoice" class="kt-checkbox">
+                    <input type="checkbox" id="isEndPointChoice">{{__('chats.is_end')}}
+                    <span></span>
+                </label>
+                <label for="isICON" class="kt-checkbox">
+                    <input type="checkbox" id="isICON">{{__('chats.as_icon')}}
+                    <span></span>
+                </label>
+            </div>
+            <div class="endPointTextChoice" style="display: none;">
+                <input type="text" id="endPointText" class="form-control" placeholder="End Point Text" />
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-brand setting_submit_btn" id="addTask">{{__('chats.submit')}}</button>
             </div>
         </div>
         <!-- Add new Question | Board Sidebar Content -->
@@ -304,73 +280,64 @@
         <!-- Editor - Question Heding Sidebar Content -->
         <div class="inputs-editor" style="display: none;">
             <div class="form-group">
+                <label>{{__('chats.edit_question')}}</label><br>
+                <textarea id="Edit-kanban-add-board" class="summarnote_en" name="text" required></textarea>
+                <br />
+                <textarea id="Edit-kanban-add-board-ar" class="summarnote_ar" name="text" required></textarea>
 
-                <div class="form-group mt-3">
-                    <label>{{__('chats.edit_question')}}</label><br>
-                    <textarea id="Edit-kanban-add-board" class="summarnote_en" name="text" required></textarea>
-                    <br />
-                    <textarea id="Edit-kanban-add-board-ar" class="summarnote_ar" name="text" required></textarea>
-
-                    <br />
-                    <select name="Edit-question_type" id="Edit-question_type" style="width: 100%" class="form-control kt_select2_1">
-                        <option value="choices">{{__('chats.choicing')}}</option>
-                    </select><br />
-                    <br />
-                    <label class="kt-checkbox">
-                        <input type="checkbox" id="Edit-isEntryPoint">{{__('chats.is_entry')}}
-                        <span></span>
-                    </label>
-                    <br />
-                </div>
-                <br>
-                <button class="btn btn-outline-success" id="editQHeadingBtn">Submit</button>
+                <br />
+                <select name="Edit-question_type" id="Edit-question_type" style="width: 100%" class="form-control kt_select2_1">
+                    <option value="choices">{{__('chats.choicing')}}</option>
+                </select><br />
+                <br />
+                <label class="kt-checkbox">
+                    <input type="checkbox" id="Edit-isEntryPoint">{{__('chats.is_entry')}}
+                    <span></span>
+                </label>
+                <br />
+            </div>
+            <div class="text-center">
+                <button class="btn setting_submit_btn btn-brand" id="editQHeadingBtn">Submit</button>
             </div>
         </div>
 
+        <!-- Edit the User Reply Box  -->
         <div class="edit-task-box" style="display: none;">
-            <div class="form-group">
-                <div class="form-group mt-3">
-                    <label>{{__('chats.edit_answer')}}</label><br>
-                    <textarea id="Edit-kanban-add-task" class="summarnote_en" required></textarea>
-                    <br />
-                    <textarea id="Edit-kanban-add-task-ar" class="summarnote_ar" required></textarea>
-                    <br />
-                    <select id="Edit-next-choice-question" style="width: 100%" class="form-control kt_select2_1" required>
-                        <option value="">{{__('chats.next_question')}}</option>
-                        @foreach($chat->questions as $question)
-                        <option value="{{ $question->id }}">{{ $question->text }}</option>
-                        @endforeach
-                    </select>
-                    <br />
-                    <div class="form-group form-group-last row">
-                        <label class="col-form-label col-lg-12 col-sm-12">{{__('chats.fqa')}}</label>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-
-                            <input id="kt_tagify_3" name='tags' class='tagify tagify--outside' value=""
-                                placeholder='{{__(' chats.faq')}}'>
-                            <div class="kt-margin-t-10">
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <div class="endPointTextChoice" style="display: none;">
-                        <input type="text" id="Edit-endPointText" class="form-control" placeholder="End Point Text" />
-                        <br />
-                    </div>
-                    <label class="kt-checkbox">
-                        <input type="checkbox" id="Edit-isEndPointChoice">{{__('chats.is_end')}}
-                        <span></span>
-                    </label>
-                    <br>
-                    <label class="kt-checkbox">
-                        <input type="checkbox" id="Edit-isICON">{{__('chats.as_icon')}}
-                        <span></span>
-                    </label>
-                    <br />
-                    <button class="btn btn-outline-success" id="doneEdit">Submit</button>
+            <label class="mb-4">{{__('chats.edit_answer')}}</label>
+            <div class="mb-3">
+                <textarea id="Edit-kanban-add-task" class="summarnote_en" required></textarea>
+            </div>
+            <div class="mb-4">
+                <textarea id="Edit-kanban-add-task-ar" class="summarnote_ar" required></textarea>
+            </div>
+            <select id="Edit-next-choice-question" style="width: 100%" class="form-control kt_select2_1" required>
+                <option value="">{{__('chats.next_question')}}</option>
+                @foreach($chat->questions as $question)
+                <option value="{{ $question->id }}">{{ $question->text }}</option>
+                @endforeach
+            </select>
+            <div class="form-group form-group-last mt-3 row">
+                <label class="col-form-label col-12">{{__('chats.fqa')}}</label>
+                <div class="col-12">
+                    <input id="kt_tagify_3" name='tags' class='tagify tagify--outside' placeholder='{{__(' chats.faq')}}'>
+                    <div class="kt-margin-t-10"></div>
                 </div>
-                <br>
-
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <label class="kt-checkbox">
+                    <input type="checkbox" id="Edit-isEndPointChoice">{{__('chats.is_end')}}
+                    <span></span>
+                </label>
+                <label class="kt-checkbox">
+                    <input type="checkbox" id="Edit-isICON">{{__('chats.as_icon')}}
+                    <span></span>
+                </label>
+            </div>
+            <div class="endPointTextChoice mt-1" style="display: none;">
+                <input type="text" id="Edit-endPointText" class="form-control" placeholder="End Point Text" />
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-brand setting_submit_btn" id="doneEdit">Submit</button>
             </div>
         </div>
     </div>

@@ -70,15 +70,31 @@
     <script src="{{ url('/backend') }}/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
     <script src="{{ url('/backend') }}/vendors/sweetalert/sweetalert.js"></script>
     <script>
+        var textLang = '';
+
+        if(document.querySelector('html').getAttribute('dir') === 'rtl') {
+            textLang = {
+                title: 'هل انت متأكد؟',
+                text: '',
+                buttonText: 'نعم، تأكيد الحذف'
+            }
+        } else {
+            textLang = {
+                title: 'Are you sure?',
+                text: 'You will be able to revert this!',
+                buttonText: 'Yes, delete it!'
+            }
+        }
+
         function delete_confirmation(id){
             swal.fire({
-            title: 'Are you sure?',
-            text: "You will be able to revert this!",
+            title: textLang.title,
+            text: textLang.text,
             type: 'warning',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#3b536a',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: textLang.buttonText
             }).then((result) => {
                 if (result.value) {
                     event.preventDefault();

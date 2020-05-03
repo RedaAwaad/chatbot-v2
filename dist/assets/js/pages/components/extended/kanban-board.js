@@ -355,13 +355,18 @@ var KTKanbanBoardDemo = function() {
                 beforeSend: function(){
                     // $('#kanban4').hide();
 
-                    $('#uploadStatus'+answer_id).html('<img src="http://mujib-chatbot.com/cdn/bot.gif" style="width: 70px"/>');
+                    $('#uploadStatus'+answer_id).html('<img src="http://mujib-chatbot.com/cdn/bot.gif" style="width: 50px">');
                 },
                 success: function(response) {
                     // $('#kanban4').show();
 
                     $('#uploadStatus'+answer_id).html('')
-                    $(".edit-task").fadeIn()
+                    $(".edit-task").fadeIn();
+
+                    // Remove Loading Data Overlay
+                    $('#kt_demo_panel.overflow').removeClass('overflow');
+                    $('#loadingData').fadeOut();
+
                     tagify.removeAllTags()
                     tagify.addTags(response.items)
                     $('#Edit-kanban-add-task-ar').summernote('code', response.text_ar);

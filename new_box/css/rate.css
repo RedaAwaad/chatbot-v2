@@ -134,4 +134,22 @@
     flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+}
+
+.rating-container .feedback button {
+    background: #f79621;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 7px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.rating-container .feedback button:hover {
+    background: #fcd93a;
 }

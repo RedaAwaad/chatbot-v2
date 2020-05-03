@@ -27,9 +27,35 @@
         </style>
     </noscript>
     <!-- End Chatbot -->
+    <style>
+        body {overflow: hidden;}
+        .page__loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 999999;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+        }
+        .page__loader.loading_now {
+            display: flex !important;
+        }
+    </style>
 </head>
 <body>
 <!-- Start Navbar -->
+<div class="page__loader loading_now" id="page__loader">
+    <img alt="Logo" src="{{url('/')}}/mujib/images/logo_bottom.png"/>
+    <div class="spinner-border mt-4" role="status">
+    <span class="sr-only">Loading...</span>
+    </div>
+</div>
 <nav class="navbar navbar-light">
     <!-- <div class="container"> -->
     <a class="navbar-brand" href="#home">
@@ -813,5 +839,11 @@
 <script src="{{url('/mujib')}}/js/slick.init.js"></script>
 <script src="{{url('/mujib')}}/js/main.js"></script>
 <script src="{{url('/mujib')}}/js/index.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        document.getElementById('page__loader').classList.remove('loading_now');
+        document.querySelector('body').style.overflowY = 'auto';
+    });
+</script>
 </body>
 </html>

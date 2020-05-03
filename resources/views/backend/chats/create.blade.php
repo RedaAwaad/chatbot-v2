@@ -8,7 +8,7 @@
         </h3>
         <a href="#" class="kt-demo-panel__close" id="kt_demo_panel_close"><i class="flaticon2-delete"></i></a>
     </div>
-    <div class="kt-demo-panel__body">
+    <div class="kt-demo-panel__body h-auto">
         <form method="POST" action="{{route('chats.store')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
@@ -34,9 +34,11 @@
             <div class="form-group">
                 <label>{{__('chats.image')}}</label>
                 <input type="file" class="form-control" id="chatbotImage" name="image" required>
-                <img id="blah" src="#" alt="your image" style="width: 250px;text-align: center;margin-right: 450px;margin-top: 50px;" />
             </div>
             <div class="text-center">
+                <img id="blah" src="#" class="mx-auto" alt="your image" style="max-width: 250px;" />
+            </div>
+            <div class="text-center mt-4">
                 <button type="submit" class="btn btn-brand btn-elevate btn-icon-sm">
                     <i class="la la-plus"></i> {{__('chats.add')}}
                 </button>
